@@ -23,7 +23,7 @@ const data = [
     options: ["Sparrow", "Peacock", "Pigeon", "Crow"],
   },
   {
-    question: "Who won the 2024 Cricket T20 world cup??",
+    question: "Who won the 2025 Cricket T20 world cup??",
     answer: "India",
     options: ["Australia", "South Africa", "West Indies", "India"],
   },
@@ -51,7 +51,6 @@ const data = [
 
 
 displayQuestionAndOptions();
-// TO DISPLAY TIMER AT START
 
 timer.innerHTML = counter--; // 10
 displayTimer();
