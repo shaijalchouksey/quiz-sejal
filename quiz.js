@@ -57,7 +57,6 @@ displayTimer();
 
 id1 = setInterval(changeQuestion, 10000);
 
-// STORING USER ANSWER
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", storeUserAnswer);
 }
@@ -74,10 +73,8 @@ function changeQuestion() {
 }
 
 function displayQuestionAndOptions() {
-  //TO DISPLAY QUESTION
   question.innerHTML = data[questionNumber].question;
 
-  //TO DISPLAY OPTIONS
   for (let i = 0; i < options.length; i++) {
     options[i].innerHTML = data[questionNumber].options[i];
   }
@@ -114,5 +111,3 @@ function displayScore() {
   }
   scoreDivH2.innerHTML = "You have scored " + score + " out of " + data.length;
 }
-
-//HOISTING: to take var declarations & function definitions up top
